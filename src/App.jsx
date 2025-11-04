@@ -30,7 +30,7 @@ function App() {
   const fetchWeather = (city) => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a6573011df60d44d409ba0ca008039aa`
+       // `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a6573011df60d44d409ba0ca008039aa` // API KEY DEACTIVATED
       )
       .then((res) => {
         setWeather(res.data.weather); // Set weather data
